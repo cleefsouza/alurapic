@@ -1,8 +1,20 @@
 import { Component } from '@angular/core';
 
+import { HttpClient, HttpHandler } from '@angular/common/http';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent { }
+export class AppComponent {
+
+  photos = [];
+
+  /**
+   * @param http HttpClietne
+   */
+  constructor(http: HttpClient) {
+    console.log(http);
+  }
+}
