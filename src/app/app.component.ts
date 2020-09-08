@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+
 import { PhotoService } from './photos/photo/photo.service';
+import { Photo } from './photos/photo/photo';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,7 @@ import { PhotoService } from './photos/photo/photo.service';
 })
 export class AppComponent {
 
-  photos: Object[] = [];
+  photos: Photo[] = [];
 
   /**
    * @param photoService PhotoService
